@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscripciones CECyTEM - por Alumnos del 404</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5e9d7; /* Fondo beige más intenso */
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2E8B57, #3CB371);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+        width: 170px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px 15px;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #3CB371;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #2E8B57;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: #fffaf0; /* Secciones con beige claro */
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    h2 {
+      color: #2E8B57;
+    }
+
+    ul li {
+      padding: 5px 0;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    form input, form select, form textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      background-color: #fdf6e3;
+    }
+
+    form button {
+      background: #2E8B57;
+      color: white;
+      padding: 12px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #3CB371;
+    }
+
+    .error, .success {
+      font-size: 0.95rem;
+      margin-top: 10px;
+    }
+
+    .error {
+      color: red;
+    }
+
+    .success {
+      color: green;
+    }
+
+    footer {
+      background-color: #2E8B57;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #topBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #2E8B57;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      display: none;
+    }
+
+    #topBtn:hover {
+      background: #3CB371;
+    }
+
+    section:hover {
+      transform: scale(1.01);
+    }
+  </style>
+</head>
+<body>
+
+  <header id="inicio">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_GlrAYlHROc_Ri7aLW3B3OtzgxX4jYF0Fyg&s" alt="Logotipo CECyTEM">
+    <h1>Inscripciones CECyTEM</h1>
+    <p>¡Forma parte del futuro con nosotros!</p>
+  </header>
+
+  <nav>
+    <a href="#mision">Misión</a>
+    <a href="#vision">Visión</a>
+    <a href="#valores">Valores</a>
+    <a href="#estudios">Estudios</a>
+    <a href="#inscripcion">Inscripción</a>
+  </nav>
+
+  <section id="mision">
+    <h2>Misión</h2>
+    <p>Formar ciudadanos responsables, críticos y capacitados con base en una educación tecnológica de calidad e inclusión.</p>
+  </section>
+
+  <section id="vision">
+    <h2>Visión</h2>
+    <p>Ser una institución reconocida nacional e internacionalmente por su innovación educativa y formación de talento humano comprometido.</p>
+  </section>
+
+  <section id="valores">
+    <h2>Valores</h2>
+    <ul>
+      <li><strong>Compromiso</strong></li>
+      <li><strong>Responsabilidad</strong></li>
+      <li><strong>Honestidad</strong></li>
+      <li><strong>Trabajo en equipo</strong></li>
+      <li><strong>Solidaridad</strong></li>
+    </ul>
+  </section>
+
+  <section id="estudios">
+    <h2>Estudios que se imparten</h2>
+    <ul>
+      <li>Programación</li>
+      <li>Mantenimiento de equipo de cómputo</li>
+      <li>Desarrollo organizacional</li>
+    </ul>
+  </section>
+
+  <section id="inscripcion">
+    <h2>Lineamientos del proceso de inscripción</h2>
+    <p><strong>Requisitos:</strong> Certificado de secundaria, CURP, Acta de nacimiento, Comprobante de domicilio.</p>
+    <p><strong>Documentación:</strong> 3 copias de cada documento, 6 fotos tamaño infantil, carpeta y engargolado.</p>
+
+    <h2>Formulario de Inscripción</h2>
+    <form id="formulario">
+
+      <input type="text" id="nombre" placeholder="Nombre completo" required>
+      <input type="email" id="email" placeholder="Correo electrónico" required>
+      <input type="tel" id="telefono" placeholder="Teléfono (10 dígitos)" pattern="[0-9]{10}" required>
+      <select id="especialidad" required>
+        <option value="">-- Selecciona especialidad --</option>
+        <option>Programación</option>
+        <option>Mantenimiento de equipo de cómputo</option>
+        <option>Desarrollo organizacional</option>
+      </select>
+      <textarea id="mensaje" placeholder="¿Tienes alguna duda?" rows="3"></textarea>
+      <button type="submit">Enviar inscripción</button>
+      <p id="respuesta"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p> Hecho por alumnos del grupo 404 | CECyTEM 2025</p>
+  </footer>
+
+  <button id="topBtn" title="Volver arriba">↑</button>
+
+  <script>
+    document.getElementById('formulario').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const nombre = document.getElementById('nombre').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const telefono = document.getElementById('telefono').value.trim();
+      const especialidad = document.getElementById('especialidad').value;
+      const respuesta = document.getElementById('respuesta');
+
+      if (!nombre || !email || !telefono || !especialidad) {
+        respuesta.textContent = "⚠️ Completa todos los campos obligatorios.";
+        respuesta.className = "error";
+        return;
+      }
+
+      respuesta.textContent = "✅ ¡Inscripción enviada con éxito!";
+      respuesta.className = "success";
+      this.reset();
+    });
+
+    const topBtn = document.getElementById("topBtn");
+    window.onscroll = function () {
+      topBtn.style.display = window.scrollY > 200 ? "block" : "none";
+    };
+    topBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+  </script>
+
+</body>
+</html>
